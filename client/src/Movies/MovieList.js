@@ -22,15 +22,9 @@ const MovieList = props => {
   return (
     <div className="movie-list">
       {movies.map(movie => (
-        <MovieDetails key={movie.id} movie={movie} />
+        <MovieCard props={movie}/>
       ))}
     </div>
-  );
-}
-
-function MovieDetails({ movie }) {
-  return (
-    <MovieCard props={movie}/>
   );
 }
 
