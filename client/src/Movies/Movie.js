@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import MovieCard from './MovieCard';
-import { Route } from 'react-router-dom';
+// import MovieCard from './MovieCard';
+// import { Route } from 'react-router-dom';
 
 const Movie = (props, key) => {
   const [movie, setMovie] = useState([]);

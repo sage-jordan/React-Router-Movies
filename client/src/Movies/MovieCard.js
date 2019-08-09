@@ -1,11 +1,11 @@
-import React, { useState} from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+// import { Link } from 'react-router-dom';
 
 
 const MovieCard = props => {
   const { title, director, metascore, stars } = props.props;
 
-  const id = props.id;
+  // const id = props.id;
 
   return(
       <div className="save-wrapper">

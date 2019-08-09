@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MovieCard from './MovieCard';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const MovieList = props => {
   const [movies, setMovies] = useState([]);
