@@ -8,7 +8,7 @@ const MovieList = props => {
   useEffect(() => {
     const getMovies = () => {
       axios
-        .get("http://localhost:5000/api/movies")
+        .get("https://aqueous-mountain-37385.herokuapp.com/api/movies")
         .then(response => {
           setMovies(response.data);
         })
