@@ -2,28 +2,28 @@
 
 Topics:
 
-* React Router
-* Using Link and NavLink to navigate to specific routes
-* Passing Route Parameters
-* Passing props to components rendered by the Router
+- React Router
+- Using Link and NavLink to navigate to specific routes
+- Passing Route Parameters
+- Passing props to components rendered by the Router
 
 ## Instructions
 
 **NOTE ⚠️ - You will NOT need to finish this project after React Router I. Start working on it now, then you can finish it up after the next module - React Router II.**
 
-- [ ] **Fork** this repository, then clone your fork.
-- [ ] **NOTE** You have 2 servers that you will be running here so read these instructions carefully.
-- [ ] **In the root of this directory**: Run `yarn install` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`. (Don't worry too much about this process, you'll get used to doing this and it will be explained more in the future).
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
+- [x] **Fork** this repository, then clone your fork.
+- [x] **NOTE** You have 2 servers that you will be running here so read these instructions carefully.
+- [x] **In the root of this directory**: Run `yarn install` to download dependencies.
+- [x] Run the server using `yarn start` or `node server.js`. (Don't worry too much about this process, you'll get used to doing this and it will be explained more in the future).
+- [x] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [x] Still inside the `client` folder run `yarn start` to run the client application.
 
-- [ ] Once your application is up and running on the client, you should see a browser window that looks like this at `localhost:3000`
-  ![Movies Home](https://ibin.co/3xhmmHVl9BKF.png)
+- [x] Once your application is up and running on the client, you should see a browser window that looks like this at `localhost:3000`
+      ![Movies Home](https://ibin.co/3xhmmHVl9BKF.png)
 
 ### Part 1:
 
-- [ ] Wrap your app with the router.
+- [x] Wrap your app with the router.
 - [ ] Inside your App file add two routes.
   - [ ] one route for `/` that loads the `MovieList` component.
   - [ ] one route that will take an `id` parameter after`/movies/` (ex: `/movies/2`, `/movies/3` where the id is dynamic). This route should load the `Movie` component.
@@ -46,11 +46,12 @@ If you have completed Parts 1 & 2 feel free to move on to these stretch goals.
 
 ### Add `Save Movie` functionality.
 
-- [ ] You will notice there is a 'Saved Movies' component that we are not currently using. In this step you will add the functionality to save a movie. You will need to pass the `addToSavedList` function to the `Movie` component. Once you have done that you will need to add a click handler to the save button. You will need to uncomment lines 24-27 in `Movie.js` to complete this. 
+- [ ] You will notice there is a 'Saved Movies' component that we are not currently using. In this step you will add the functionality to save a movie. You will need to pass the `addToSavedList` function to the `Movie` component. Once you have done that you will need to add a click handler to the save button. You will need to uncomment lines 24-27 in `Movie.js` to complete this.
 
 ### Turn your Saved Movie list into `Link`s.
 
 - [ ] Your list of saved movies should be links to the movie itself. Study and understand what the `saveMovie` function is doing.
 
 ### Turn your Saved Movie `Link`s into `NavLink`s.
+
 - [ ] Navlink
