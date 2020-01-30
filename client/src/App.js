@@ -17,13 +17,7 @@ const App = () => {
       <Route exact path="/" component={MovieList} />
       <Route
         path="/movies/:id"
-<<<<<<< HEAD
         render={props => <Movie addToSavedList={addToSavedList} />}
-=======
-        render={props => (
-          <Movie addToSavedList={addToSavedList} match={props.match} />
-        )}
->>>>>>> 4df56b28697c36d17c9e3839b157cdbf5134da5c
       />
     </div>
   );
