@@ -4,10 +4,9 @@ import MovieCard from "./MovieCard";
 import { useParams } from "react-router-dom";
 
 const Movie = props => {
-  console.log(props);
-  const [movie, setMovie] = useState({});
+  console.log("hey props", props);
+  const [movie, setMovie] = useState();
   const { id } = useParams();
-  console.log(id);
 
   useEffect(() => {
     // change ^^^ that line and grab the id from the URL
@@ -16,7 +15,7 @@ const Movie = props => {
     axios
       .get(`http://localhost:5000/api/movies/${id}`)
       .then(response => {
-        console.log(response.data);
+        console.log(response);
         setMovie(response.data);
       })
       .catch(error => {
