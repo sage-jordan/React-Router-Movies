@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import MovieCard from "./MovieCard";
+import { Link } from "react-router-dom";
 
 const MovieList = props => {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
     const getMovies = () => {
       axios
-        .get("https://aqueous-mountain-37385.herokuapp.com/api/movies")
+        .get("http://localhost:5000/api/movies")
         .then(response => {
+          console.log(response);
           setMovies(response.data);
+          console.log(movies);
         })
         .catch(error => {
           console.error("Server Error", error);

@@ -1,7 +1,10 @@
 import React from "react";
 
-function MovieCard({ movie }) {
-  const { title, director, metascore, stars } = movie;
+const MovieCard = props => {
+  const { title, director, metascore, stars } = props.movie;
+  // console.log(props);
+  console.log(props.movie);
+
   return (
     <div className="movie-card">
       <h2>{title}</h2>
@@ -20,6 +23,6 @@ function MovieCard({ movie }) {
       ))}
     </div>
   );
-}
+};
 
 export default MovieCard;
