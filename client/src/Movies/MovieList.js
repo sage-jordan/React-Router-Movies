@@ -10,15 +10,17 @@ const MovieList = props => {
   useEffect(() => {
     const getMovies = () => {
       axios
-        .get('http://localhost:5000/api/movies')
+        .get("http://localhost:5000/api/movies")
         .then(response => {
+          console.log(response);
           setMovies(response.data);
+          console.log(movies);
         })
         .catch(error => {
           console.error('AXIOS CALL ERROR', error);
         });
-    }
-    
+    };
+
     getMovies();
   }, [props.match.params.id]);
   
@@ -31,6 +33,6 @@ const MovieList = props => {
       ))}
     </div>
   );
-}
+};
 
 export default MovieList;

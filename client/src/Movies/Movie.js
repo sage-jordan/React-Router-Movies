@@ -38,27 +38,25 @@ const Movie = (props, key) => {
 
   console.log("movie ID: ",  movie.id)
   return (
-    //  {movie.id ? (
-     <div className="save-wrapper">
-      <div className="movie-card">
-        <h2>{movie.title}</h2>
-        <div className="movie-director">
-          Director: <em>{movie.director}</em>
-        </div>
-        <div className="movie-metascore">
-          Metascore: <strong>{movie.metascore}</strong>
-        </div>
-        <h3>Actors</h3>
-        {console.log(movie)}
-        {movie.stars.map(star => (
-          <div key={star} className="movie-star">
-            {star}
-          </div>
-        ))} 
-        </div>
-        <div onClick={saveMovie} className="save-button">Save</div>
+    <div className="save-wrapper">
+    <div className="movie-card">
+      <h2>{movie.title}</h2>
+      <div className="movie-director">
+        Director: <em>{movie.director}</em>
       </div>
-      // ) : ''} 
+      <div className="movie-metascore">
+        Metascore: <strong>{movie.metascore}</strong>
+      </div>
+      <h3>Actors</h3>
+      {console.log(movie)}
+      {movie.stars.map(star => (
+        <div key={star} className="movie-star">
+          {star}
+        </div>
+      ))} 
+      </div>
+      <div onClick={saveMovie} className="save-button">Save</div>
+    </div> 
   )
 }
 export default Movie;
